@@ -9,5 +9,5 @@ for(let i = 0; i < input.length; i++) {
     if(age >= 19 && sex === 'M') {
         return console.log(1);
     }
-    return console.log(0);
 }
+return console.log(0);
