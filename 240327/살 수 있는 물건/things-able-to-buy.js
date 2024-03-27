@@ -6,4 +6,7 @@ const MASK = 1000;
 if(+input >= BOOK) {
     return console.log("book");
 }
-return console.log("mask");
+else if(+input >= MASK) {
+    return console.log("mask");  
+}
+return console.log("no");
