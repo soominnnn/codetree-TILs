@@ -1,17 +1,16 @@
 const fs = require("fs");
 const input = fs.readFileSync(0).toString().trim();
-let count = 0;
 
 function findOne(n) {
-    let remainder = n % 2 === 0 ? Math.floor(n / 2) : Math.floor(n / 3);
-    count += 1;
-
-    if(remainder <= 1) {
-        return count;
+    if(n === 1) {
+        return 0;
     }
-
-
-    return findOne(remainder);
+    
+    if(n % 2 === 0) {
+        return findOne(Math.floor(n / 2)) + 1;
+    } else {
+        return findOne(Math.floor(n / 3)) + 1;
+    }
 }
 
 console.log(findOne(+input));
