@@ -6,7 +6,7 @@ let maxNumber = 0;
 
 function findMaxNumber(n) {
     if(n === 0) {
-        return array[n];
+        return array[0];
     }
 
     if(maxNumber <= +array[n]) {
