@@ -8,8 +8,9 @@ function findMaxNumber(n) {
     if(n === 0) {
         if(maxNumber <= +array[0]) {
             maxNumber = +array[0];
-            return array[0];
         }
+        
+        return maxNumber;
     }
 
     if(maxNumber <= +array[n]) {
@@ -19,5 +20,4 @@ function findMaxNumber(n) {
     return findMaxNumber(n-1);
 }
 
-findMaxNumber(+index);
-console.log(maxNumber);
+console.log(findMaxNumber(+index));
