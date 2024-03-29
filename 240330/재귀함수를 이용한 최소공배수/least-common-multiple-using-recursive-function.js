@@ -1,5 +1,5 @@
 const fs = require("fs");
-const input = fs.readFileSync().toString().trim().split("\n");
+const input = fs.readFileSync(0).toString().trim().split("\n");
 const n = input.shift();
 const array = input[0].split(" ");
 
