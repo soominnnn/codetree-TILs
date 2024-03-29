@@ -23,4 +23,4 @@ function findLcm(arr, n) {
     return lcm(arr[n - 1], findLcm(arr, n - 1));
 }
 
-console.log(findLcm(array, n));
+console.log(findLcm(array, +n));
