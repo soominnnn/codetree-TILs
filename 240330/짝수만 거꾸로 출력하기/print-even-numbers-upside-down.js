@@ -3,6 +3,8 @@ const input = fs.readFileSync(0).toString().trim().split("\n");
 
 input.shift();
 
-const result = input.filter(el => el % 2 === 0).sort((a, b) => Number(a) - Number(b));
+const array = input[0].split(" ");
+
+const result = array.filter(el => el % 2 === 0).reverse();
 
 console.log(result.join(" "));
