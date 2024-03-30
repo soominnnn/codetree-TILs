@@ -16,4 +16,5 @@ for(let i = 0; i < input.length; i++) {
     agent[i] = new Agent(codeName, +score);
 }
 
+agent = agent.sort((a, b) => a.score - b.score);
 console.log(`${agent[0].codeName} ${agent[0].score}`);
