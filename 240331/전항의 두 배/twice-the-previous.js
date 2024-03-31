@@ -1,7 +1,7 @@
 const fs = require("fs");
 const input = fs.readFileSync(0).toString().trim().split(" ");
 const COUNT = 10;
-const result = [];
+const result = [+input[0], +input[1]];
 
 function sequence(n1, n2, count) {
     if(count === 2) {
@@ -16,4 +16,4 @@ function sequence(n1, n2, count) {
 }
 
 sequence(+input[0], +input[1], COUNT);
-console.log(input.join(" ") + " " + result.join(" "));
+console.log(result.join(" "));
