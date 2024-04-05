@@ -10,7 +10,7 @@ if(+input[0] === minNumber) {
     result += 0 + " ";
 }
 
-if(indexOneNumberCount !== 1) {
+if(indexOneNumberCount === 3) {
     result += 1;
 } else {
     result += 0;
