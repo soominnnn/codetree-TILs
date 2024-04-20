@@ -3,7 +3,7 @@ const input = fs.readFileSync(0).toString().trim().split(' ');
 const [a, b] = [+input[0], +input[1]];
 let result = 0;
 
-if(a > b) {
+if(a < b) {
     for(let i = a; i <= b; i++) {
         result += i % 5 === 0 ? i : 0;
     }
