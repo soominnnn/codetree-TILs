@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-    double a  = 26.352;
+    double a  = 25.352;
 
     cout << fixed;
 
