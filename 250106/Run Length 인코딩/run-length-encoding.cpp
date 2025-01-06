@@ -16,14 +16,13 @@ int main() {
             result += find_str + to_string(count);
             find_str = A[i];
             count = 1;
-        } else {
+        } 
+        else if (A[i] == find_str) {
             count += 1;
-            if (i == A.length() - 1){
-                result += find_str + to_string(count);
-            }
         }
     }
 
+    result += find_str + to_string(count);
     cout << result.length() << endl << result;
     return 0;
 }
