@@ -1,5 +1,6 @@
-int a = input();
+inp = input();
+number = int(inp)
 
-print(a)
-if(a < 0):
+print(number)
+if(int(number) < 0):
     print("minus")
