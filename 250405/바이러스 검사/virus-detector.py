@@ -10,6 +10,6 @@ for cnt in customer_arr:
     if cnt % member_cnt != 0:
         answer += cnt // member_cnt + 1
     else:
-        answer += cnt // member_cng
+        answer += cnt // member_cnt
 
 print(answer)
