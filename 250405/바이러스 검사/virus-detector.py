@@ -7,7 +7,7 @@ for cnt in customer_arr:
     answer += 1
     cnt -= leader_cnt
 
-    if cnt != 0:
+    if cnt > 0:
         if cnt % member_cnt != 0:
             answer += cnt // member_cnt + 1
         else:
