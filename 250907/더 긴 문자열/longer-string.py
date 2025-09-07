@@ -1,5 +1,7 @@
 A, B = input().split()
-if len(A) >= len(B):
+if len(A) > len(B):
     print(A, len(A))
-else:
+elif len(A) < len(B):
     print(B, len(B))
+else:
+    print("same")
