@@ -14,7 +14,7 @@ for _ in range(N):
     x1 += 100
     x2 += 100
     # 겹치는 구간 +1씩 추가
-    for i in range(x1, x2 + 1):
+    for i in range(x1, x2):
         array[i] += 1
 
 # MAX 출력
