@@ -12,7 +12,8 @@ for i in range(N):
     # IF: i = 0일때, 예외 처리
     if i == 0:
         cnt += 1
-
+        break
+        
     # 이전 숫자와 동일한 숫자라면 +1
     if array[i] == array[i-1]:
         cnt += 1
