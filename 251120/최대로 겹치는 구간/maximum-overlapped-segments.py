@@ -4,7 +4,7 @@
 3. 제한조건: 인덱스가 음수이므로, 인덱스를 양수로 맞춰줄 것
 """
 # 200개의 배열 공간을 제작 / N 받아오기
-array = [0 for i in range(200)]
+array = [0 for i in range(201)]
 N = int(input())
 
 # FOR: N번 반복
